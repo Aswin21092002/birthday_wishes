@@ -11,42 +11,24 @@ body {
   visibility: hidden;
 }
 
-/* Main container styles (for larger screens) */
 .container {
   height: 100vh;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
   text-align: center;
-  visibility: visible; /* Ensure visibility is visible */
+  visibility: hidden;
   width: 100vw;
   background-color: black;
   color: white;
+  
 }
 
-/* Adjust position of content for mobile screens */
-@media screen and (max-width: 500px) {
-  .container {
-    width: 100vw;  /* Ensure it takes the full width of the viewport */
-    height: 100vh;  /* Full height of the viewport */
-    overflow: hidden;  /* Prevent overflow on mobile */
-    padding: 0;  /* Remove any unnecessary padding */
-  }
-
-  .container > div {
-    top: 10vh;  /* Adjust position so it’s more centered vertically */
-  }
-}
-
-/* Additional tweaks for smaller screens */
-@media screen and (max-width: 375px) {
-  .container {
-    padding: 0 10px; /* Add some padding to prevent content touching the edges on very small screens */
-  }
-
-  .container > div {
-    top: 15vh;  /* Adjust positioning to prevent content from being too close to the top */
-  }
+.container > div {
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 20vh;
 }
 
 .one {
