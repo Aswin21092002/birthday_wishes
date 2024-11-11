@@ -19,6 +19,9 @@ body {
   text-align: center;
   visibility: hidden;
   width: 100vw;
+  background-color: black;
+  color: white;
+  
 }
 
 .container > div {
@@ -105,15 +108,15 @@ body {
   display: inline-block;
   height: 350px;
   max-width: 100%;
-  /* height: auto; */
+  width: auto; /* This keeps the aspect ratio intact */
 }
 
 .six .hat {
-  left: 41.5%;
   position: absolute;
-  /* transform: scale(0.1); */
-  top: -35%;
-  width: 80px;
+  top: -35%; /* Adjust this as necessary */
+  left: 50%;  /* This centers the hat horizontally */
+  transform: translateX(-50%); /* This ensures the hat is centered exactly */
+  width: 80px; /* Set the width of the hat */
 }
 
 .baloons img {
